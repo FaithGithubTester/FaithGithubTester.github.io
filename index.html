@@ -42,6 +42,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
 		 $(document).ready(function(){
@@ -67,7 +70,7 @@ src: url("/webfonts/file.woff2") format("woff2");
 body{
 background:#000000;
 color:#FFFFFF;
-font-family: 'Arima Madurai', sans-serif;
+font-family: 'Poppins', sans-serif;
 font-size:18px;
 font-weight: normal;
 font-style: normal;
@@ -224,7 +227,7 @@ font-family:'File';
    
 background: url(images/background-1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;;
+  background-size: cover;
 }
 
 .about-container{
@@ -232,7 +235,7 @@ color:#13280D;
 }
 
 .about-container .about-title{
-color:#1D3D14;
+color:#13280D;
 }
 
 .about-container .about-description{
@@ -294,12 +297,14 @@ font-weight:400;
 
 .tokenomics-section{
    
-background:#FFFFFF;
+background: url(images/background-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tokenomics-container{
      
-color:#000000;
+color:#FFFFFF;
 }
 
 .tokenomics-container .tokenomics-title{
@@ -374,19 +379,22 @@ max-width:510px;
 /* ROADMAP SECTION */ 
 
 .roadmap-section{
-background:#000000;
+background: url(images/background-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 	
 .roadmap-container{
-color:#FFFFFF;
+color:#13280D;
 }
 
 .roadmap-container ul > li{
-margin-bottom:4px;
-margin-top:4px;
+margin-bottom:8px;
+margin-top:8px;
 }
 
 .roadmap-container .roadmap-title{
+    color:#13280D;
 }
     
 /* ---------------- */
@@ -471,7 +479,7 @@ padding-right: 0rem !important;
 .navbar-collapse{
 padding-top:76px !important;
 z-index:2 !important;
-background:#000000 !important;
+background:#1D3D14 !important;
 position:fixed !important;
 top:0 !important;
 left:0 !important;
@@ -495,7 +503,7 @@ position:static !important;
 }
 
 .nav-link{
-padding:12px;
+padding:16px;
 color:#FFFFFF !important;
     text-transform:uppercase;
     font-size:1.25em;
@@ -511,7 +519,7 @@ width:35px;
 }
     
 .collapsed .navbar-toggler-icon{
-background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='480' height='480'%0AviewBox='0 0 24 24'%0Astyle=' fill:%232d9ee0;'%3E%3Cpath d='M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z'%3E%3C/path%3E%3C/svg%3E") !important;
+background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'%0Awidth='480' height='480'%0AviewBox='0 0 24 24'%0Astyle=' fill:%2365BF43;'%3E%3Cpath d='M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z'%3E%3C/path%3E%3C/svg%3E") !important;
     height:35px;
     width:35px;
 }
@@ -614,6 +622,15 @@ background: #C758BA;
     object-fit: cover;
 }
     
+.gradient-font{
+ background-image: -webkit-gradient(linear, left top, right top, from(#BCEE66), to(#109121));
+    background-image: linear-gradient(
+90deg
+, #BCEE66 0%, #109121 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 </style>
 <style></style></head>
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
@@ -666,7 +683,7 @@ background: #C758BA;
 
 <section id="ourmission" class="section about-section">
 <div class="section-container about-container container py-5">
-<h2 class="section-title about-title py-4 text-center aos-init" data-aos="fade">Our Mission</h2>
+<h2 class="section-title about-title py-4 text-center aos-init aos-animate" data-aos="fade">Our Mission</h2>
 
 <div class="row py-5">
 <div class="col-12 col-lg-6 py-4 text-lg-end">
@@ -674,163 +691,104 @@ background: #C758BA;
 					<iframe src="https://www.youtube.com/embed/Uy3fmRjo44Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 				</div>
 </div><div class="py-4 col-12 col-lg-6 text-lg-start d-flex flex-column justify-content-center align-items-center">
-<p class="mb-0 section-description about-description aos-init" data-aos="fade"><span class="d-block" style="font-size:2em;font-weight:700">To lead a new generation of DeFi enthusiasts.</span><span style="text-align: justify !important;
+<p class="mb-0 section-description about-description aos-init aos-animate" data-aos="fade"><span class="d-block" style="font-size:2em;font-weight:700;line-height:1.25;">To lead a new generation of DeFi enthusiasts.</span><span style="text-align: justify !important;
   text-justify: inter-word !important;" class="d-block mt-3">The DeFi space is growing exponentially and many know this is the future of our financial system. Let’s make DeFi an easier alternative to our conventional financial system, let Zoro guide you.</span></p>
 </div>
-</div>
-</div>
-</section>
-<section id="features" class="section features-section pt-5">
-<div class="section-container features-container container py-5">
-<h2 class="section-title tokenomics-title text-center aos-init" data-aos="fade">FEATURES</h2>
-<div class="row mt-5 mb-4">
-
-<div class="col-12 col-lg-4 mb-4 aos-init" data-aos="fade">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
-<img class="img-fluid mb-3" src="images/community-driven-2.png" style="max-height:100px;">
-<span class="tax-title-2 text-center mb-3">Community Driven</span><span class="tax-description text-center">Community focused and fair launched. The future of the project will depend on the community.</span>
-</div>
-</div>
-
-
-<div class="col-12 col-lg-4 mb-4 aos-init" data-aos="fade">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
-<img class="img-fluid mb-3" src="images/lp-lock-2.png" style="max-height:100px;">
-<span class="tax-title-2 text-center mb-3">Secured By Design</span><span class="tax-description text-center">Initial Liquidity Provided will be locked. This ensures that the project will not be rug-pulled.</span>
-</div>
-</div><div class="col-12 col-lg-4 mb-4 aos-init" data-aos="fade">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto">
-<img class="p-1 img-fluid mb-3 " src="images/anti-whale-2.png" style="max-height:100px;">
-<span class="tax-title-2 text-center mb-3">Safe and Whale-Proof</span><span class="tax-description text-center">Sells are restricted to less than 2% of the total supply to reduce swing-trading and break whales' control.</span>
-</div>
-</div>
-
-
 </div>
 </div>
 </section>
 
 <section id="tokenomics" class="section tokenomics-section">
 <div class="section-container tokenomics-container container py-5">
-<h2 class="mt-4 section-title tokenomics-title text-center aos-init" data-aos="fade">TOKENOMICS</h2>
-<div class="row">
-<div class="col-12 aos-init" data-aos="fade">
-                       <table class="table table-striped tokenomics-info-table mt-5 mb-4 mx-auto">
-					<tbody>
-					
+<h2 class="section-title about-title py-4 text-center d-none aos-init aos-animate" data-aos="fade">TOKENOMICS</h2>
 
-					<tr>
-						<td style="font-weight:500;">Total Supply</td>
-						<td style="font-weight:300;text-align: right;">1,000,000,000 $KIRITO</td>
-					</tr>
-<tr>
-						<td style="font-weight:500;">Max Wallet</td>
-						<td style="font-weight:300;text-align: right;">20,000,000 $KIRITO</td>
-					</tr>
+<div class="row py-4">
+<div class="py-4 col-12 text-center d-flex flex-column justify-content-center align-items-center">
+<p class="mb-0 section-description about-description aos-init aos-animate" data-aos="fade" style="max-width:720px;"><span class="d-block" style="font-size:1.25em;font-weight:700;line-height:1.25;">"If we reached just 10% of Saitama's market capitalization then we would be at a market cap of over 100 Million!"</span>
+<span class="d-block mt-4" style="font-size:1.25em;font-weight:700;line-height:1.25;">The Zoro Community</span>
+<span class="gradient-font d-inline-block mt-4" style="font-size:3em;font-weight:700;line-height:1.25;">The $Zoro Token</span>
+<span class="d-block mt-4" style="font-size:1.25em;font-weight:700;line-height:1.25;">Zoro is built in a sustainable way to benefit both holders and project sustainability.</span>
+<span class="d-inline-block mt-4" style="width:360px;height:200px;position:relative;font-size:3.25em;font-weight:700;line-height:1.25;"><span style="font-family:'File';font-size:2.5em;position:absolute;top:0;left:0;">10</span><span style="position:absolute;left:150px;top:20px;">%</span><span style="font-family:'File';font-size:2em;color:#109121;position:absolute;left:140px;top:70px;">TAX</span></span>
+<span class="d-block mt-4" style="font-size:1em;font-weight:400;line-height:1.25;">Zoro Inu token's holders will be taxed 1% LP fee every on-chain transaction and transformed into liquidity. It's automatic and helps create a price floor.<br>
+                     <br>A 9% marketing fee is applied for every $ZORO transaction, this fee will go towards  be used for enhancements, operations, and marketing of the $ZoroV2 Project.
+                     <br>
 
-<tr>
-						<td style="font-weight:500;">Max TX</td>
-						<td style="font-weight:300;text-align: right;">20,000,000 $KIRITO</td>
-					</tr>
-					
-				</tbody></table>
-                    </div>
-</div>
-<div class="row mb-4">
-<h3 class="text-center mb-4 aos-init" style="font-size:3em;font-weight: 700;
-    font-family: 'Teko';
-    color:#FFFFFF" data-aos="fade">BUY TAX 12%</h3>
-
-
-
-<div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
-<span class="tax-title text-center mb-3">6%</span>
-<span class="tax-title-2 text-center mb-3">Marketing</span><span class="tax-description text-center">6% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
-</div>
-</div><div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
-<span class="tax-title text-center mb-3">2%</span>
-<span class="tax-title-2 text-center mb-3">Development</span><span class="tax-description text-center">2% of every transaction is taken and will be used to for the development of Kirito Ecosystem.</span>
+                     <br>The liquidity will be locked, the development team will renounce the $ZORO contract ownership and the team will not have any tokens, this is a community owned token.</span></p>
 </div>
 </div>
-<div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
-<span class="tax-title text-center mb-3">4%</span>
-<span class="tax-title-2 text-center mb-3">Liquidity Pool</span><span class="tax-description text-center">4% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
 </div>
+</section><section id="tokenomics" class="section tokenomics-section">
+<div class="section-container tokenomics-container container py-5">
+<h2 class="section-title about-title py-4 text-center d-none aos-init aos-animate" data-aos="fade">TOKENOMICS</h2>
+
+<div class="row py-4">
+<div class="py-4 col-12 text-center d-flex flex-column justify-content-center align-items-center">
+<p class="mb-0 section-description about-description aos-init aos-animate" data-aos="fade" style="max-width:720px;"><span class="d-block" style="font-size:1.25em;font-weight:700;line-height:1.25;">"If we reached just 10% of Saitama's market capitalization then we would be at a market cap of over 100 Million!"</span>
+<span class="d-block mt-4" style="font-size:1.25em;font-weight:700;line-height:1.25;">The Zoro Community</span>
+<span class="gradient-font d-inline-block mt-4" style="font-size:3em;font-weight:700;line-height:1.25;">The $Zoro Token</span>
+<span class="d-block mt-4" style="font-size:1.25em;font-weight:700;line-height:1.25;">Zoro is built in a sustainable way to benefit both holders and project sustainability.</span>
+<span class="d-inline-block mt-4" style="width:360px;height:200px;position:relative;font-size:3.25em;font-weight:700;line-height:1.25;"><span style="font-family:'File';font-size:2.5em;position:absolute;top:0;left:0;">10</span><span style="position:absolute;left:150px;top:20px;">%</span><span style="font-family:'File';font-size:2em;color:#109121;position:absolute;left:140px;top:70px;">TAX</span></span>
+<span class="d-block mt-4" style="font-size:1em;font-weight:400;line-height:1.25;">Zoro Inu token's holders will be taxed 1% LP fee every on-chain transaction and transformed into liquidity. It's automatic and helps create a price floor.<br>
+                     <br>A 9% marketing fee is applied for every $ZORO transaction, this fee will go towards  be used for enhancements, operations, and marketing of the $ZoroV2 Project.
+                     <br>
+
+                     <br>The liquidity will be locked, the development team will renounce the $ZORO contract ownership and the team will not have any tokens, this is a community owned token.</span></p>
 </div>
-
-
-</div>
-
-<div class="row mb-4">
-<h3 class="text-center mb-4 aos-init" style="font-size:3em;font-weight: 700;
-    font-family: 'Teko';
-    color:#FFFFFF" data-aos="fade">SELL TAX 15%</h3>
-
-
-
-<div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
-<span class="tax-title text-center mb-3">9%</span>
-<span class="tax-title-2 text-center mb-3">Marketing</span><span class="tax-description text-center">9% of every transaction is taken and will be used for enhancements, operations, and marketing of the project.</span>
-</div>
-</div><div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
-<span class="tax-title text-center mb-3">2%</span>
-<span class="tax-title-2 text-center mb-3">Development</span><span class="tax-description text-center">2% of every transaction is taken and will be used to for the development of Kirito Ecosystem.</span>
-</div>
-</div>
-<div class="col-12 col-lg-4 mb-4">
-<div class="tax-card h-100 d-flex flex-column justify-content-center align-items-center px-4 py-5 mx-auto aos-init" data-aos="fade">
-<span class="tax-title text-center mb-3">4%</span>
-<span class="tax-title-2 text-center mb-3">Liquidity Pool</span><span class="tax-description text-center">4% of every transaction is transformed into liquidity. It's automatic and helps create a price floor.</span>
-</div>
-</div>
-
-
 </div>
 </div>
 </section>
 
 
 
+
+
+
 <section id="roadmap" class="section roadmap-section">
-<div class="section-container roadmap-container container py-5 aos-init" data-aos="fade">
+<div class="section-container roadmap-container container py-5 aos-init aos-animate" data-aos="fade">
 <div class="text-center">
-<h2 class="section-title roadmap-title mt-4 aos-init" data-aos="fade" style="color:#FFFFFF">ROADMAP</h2>
-<div class="row mt-4 mb-4">
-<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
-<h4 style="color:#2d9ee0">PHASE 1</h4>
+<h2 class="section-title roadmap-title py-4 aos-init aos-animate" data-aos="fade">ROADMAP</h2>
+<div class="row py-4"><div class="col-12 col-lg-3 text-center py-3 aos-init" data-aos="fade">
+<h4 style="color:#13280D">STAGE 1</h4>
 <ul class="list-unstyled text-small text-center mt-3">
-<li>Telegram and Twitter Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Initial Marketing Campaign<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Uniswap Fair Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>LP Lock Extension<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Website V1 Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Attracting more than 1,000 holders</li>
+<li>White Paper 1.0 Release</li>
+<li>2,000 Telegram members</li>
+<li>Coinecko listing</li>
+<li>Coinmarketcap listing</li><li>Contract Audit</li>
 </ul>
 </div>
-<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
-<h4 style="color:#2d9ee0">PHASE 2</h4>
+<div class="col-12 col-lg-3 text-center py-3 aos-init" data-aos="fade">
+<h4 style="color:#13280D">STAGE 2</h4>
 <ul class="list-unstyled text-small text-center mt-3">
-<li>Community Shilling</li>
-<li>Coin Listing Sites</li>
-<li>Telegram and Twitter Calls</li>
-<li>Coingecko Listing</li>
-<li>Coinmarketcap Listing</li>
+<li>6,000 holders</li>
+<li>Marketing campaign</li>
+<li>Attract 10,000 Telegram followers</li>
+
+<li>Marketplace website integration</li>
 </ul>
 </div>
-<div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
-<h4 style="color:#2d9ee0">PHASE 3</h4>
+
+<div class="col-12 col-lg-3 text-center py-3 aos-init" data-aos="fade">
+<h4 style="color:#13280D">STAGE 3</h4>
 <ul class="list-unstyled text-small text-center mt-3">
-<li>Merchandise Launch</li>
-<li>P2E Game Launch</li>
-<li>Swap Platform Launch</li>
-<li>Secret Utilities Along With</li>
-<li>Massive Marketing Campaign</li>
+<li>40,000 Zoro V2 token holders</li>
+<li>Minor CEX Listing</li>
+<li>2,000 Telegram members</li>
+<li>New partnership</li>
+<li>Major CEX Listing</li>
+</ul>
+</div><div class="col-12 col-lg-3 text-center py-3 aos-init" data-aos="fade">
+<h4 style="color:#13280D">STAGE 4</h4>
+<ul class="list-unstyled text-small text-center mt-3">
+<li>Interview on TV and Radio</li>
+<li>Create NFT</li>
+<li>Android/iOs wallet with built-on marketplace</li>
+
+
 </ul>
 </div>
+
+
 </div>
 
 </div>
